@@ -42,7 +42,7 @@ public class LoginCheck extends HttpServlet {
 		
 		if(uname.equals("java") && password.equals("1234"))
 		{
-			response.sendRedirect("member.jsp");
+			response.sendRedirect("index.jsp");
 		}
 		else
 		{
@@ -50,6 +50,5 @@ public class LoginCheck extends HttpServlet {
 		}
 	}
 		
-	}
-
 }
+

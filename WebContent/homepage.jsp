@@ -1,9 +1,7 @@
 <html>
 <body>
 
-<jsp:include page="index.html" />
-
-<jsp:include page="index.jsp" />
+<jsp:include page="login.jsp" />
 
 </body>
 
