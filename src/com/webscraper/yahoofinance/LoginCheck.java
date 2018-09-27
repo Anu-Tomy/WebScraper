@@ -19,7 +19,7 @@ public class LoginCheck extends HttpServlet {
      */
     public LoginCheck() {
         super();
-        // TODO Auto-generated constructor stub
+        
     }
 
 	/**
@@ -34,8 +34,22 @@ public class LoginCheck extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		// Check the login credentials
+		
+		String uname = request.getParameter("uname");
+		String password  = request.getParameter("password");
+		
+		if(uname.equals("java") && password.equals("1234"))
+		{
+			response.sendRedirect("member.jsp");
+		}
+		else
+		{
+			response.sendRedirect("error.jsp");
+		}
+	}
+		
 	}
 
 }
