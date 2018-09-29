@@ -1,8 +1,7 @@
 <html>
 <body>
 
-<jsp:include page="login.jsp" />
-
+<p>Welcome</p>
 </body>
 
 </html>
