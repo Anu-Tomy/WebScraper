@@ -7,7 +7,7 @@
 		</div>
 	</div>
 	<div id="container">
-		<form method="post" action="LoginCheck">
+		<form action="LoginCheck.java" method="post">
 			<table>
 				<tr>
 					<td>User Name</td>
